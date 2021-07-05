@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import MoviesData from "../MoviesData";
+// import MoviesData from "../MoviesData";
 import YoutubeEmbed from "../MovieDescription/YoutubeEmbed";
 import "./MovieDescription.css";
 import { Button } from "react-bootstrap";
 
-const MovieDescription = ({ match, history }) => {
-  const [movie, setMovie] = useState({});
-  console.log(movie);
-  useEffect(() => {
-    setMovie(MoviesData.find((movie) => movie.Id === +match.params.Id));
-  }, [match.params.Id]);
+const MovieDescription = ({ match, history, location }) => {
+  console.log(location.state);
+  const movie = location.state;
+  //   const [movie, setMovie] = useState({});
+  //   console.log(movie);
+  //   useEffect(() => {
+  //     setMovie(MoviesData.find((movie) => movie.Id === +match.params.Id));
+  //   }, [match.params.Id]);
 
   return (
     <div className="MovieDesc">

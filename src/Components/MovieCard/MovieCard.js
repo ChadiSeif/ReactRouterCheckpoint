@@ -10,7 +10,10 @@ const MovieCard = ({ movie }) => {
         <Card.Body>
           <Card.Title>
             {movie.Title}
-            <Link to={`/movie/${movie.Id}`} className="nav-link" />
+            <Link
+              to={{ pathname: `/movie/${movie.Id}`, state: movie }}
+              className="nav-link"
+            />
           </Card.Title>
           {/* <Card.Text>{movie.Description}</Card.Text> */}
           <Rate value={movie.Rating} />
