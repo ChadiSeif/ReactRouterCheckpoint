@@ -1,0 +1,11 @@
+.MovieDesc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(90, 22, 22, 0.767);
+  color: white;
+  border: black;
+  border-style: groove;
+  border-radius: 5px;
+}
