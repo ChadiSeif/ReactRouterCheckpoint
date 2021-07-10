@@ -5,9 +5,8 @@ const Add = ({ setMovies, Movies }) => {
   const [show, setShow] = useState(false);
   const [newTitle, setnewTitle] = useState("title");
   const [newDescription, setnewDescription] = useState("description");
-  const [newImage, setnewImage] = useState(
-    "https://www.logolynx.com/images/logolynx/bc/bc54410df9671574aec037c71ed56c4b.jpeg"
-  );
+  const newImage =
+    "https://www.logolynx.com/images/logolynx/bc/bc54410df9671574aec037c71ed56c4b.jpeg";
   const [newRating, setnewRating] = useState("1");
   const handleAdd = (newmovies) => setMovies([...Movies, newmovies]);
   const handleClose = () => setShow(false);

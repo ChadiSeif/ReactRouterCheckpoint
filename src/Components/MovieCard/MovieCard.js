@@ -9,11 +9,12 @@ const MovieCard = ({ movie }) => {
         <Card.Img variant="top" src={movie.PosterURL} alt="Movie photo" />
         <Card.Body>
           <Card.Title>
-            {movie.Title}
             <Link
               to={{ pathname: `/movie/${movie.Id}`, state: movie }}
               className="nav-link"
-            />
+            >
+              {movie.Title}
+            </Link>
           </Card.Title>
           {/* <Card.Text>{movie.Description}</Card.Text> */}
           <Rate value={movie.Rating} />

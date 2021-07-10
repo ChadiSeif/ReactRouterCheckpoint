@@ -24,13 +24,12 @@ const MovieApp = () => {
       </div>
 
       <MovieList
-        MoviesData={MoviesData}
         Movies={Movies}
         setMovies={setMovies}
         search={search}
         value={value}
       />
-      <Add MoviesData={MoviesData} Movies={Movies} setMovies={setMovies} />
+      <Add Movies={Movies} setMovies={setMovies} />
 
       <footer className="footer">Movie App made by SeifChadi</footer>
     </div>
